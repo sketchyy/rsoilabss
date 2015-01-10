@@ -1,0 +1,16 @@
+1. Логировать все вызовы на сервисах в виде:
+
+СЕРВИС + URI:
+
+SESSION + /rs3ses/checkuser
+FRONT + /rs3/actors
+ACTORS + /rs3act/actors/2
+MOVIES + /rs3mov/movies/byactor?id=2
+
+2. Сессия - необходимо хранить авторизованных пользователей на беке сессии, а в куках session_id, и проверять не истекла ли сессия
+
+3. для join запрашивать:
+
+/movies?actor_id=12&director_id=123
+а не 
+/movies/byactor?id=12

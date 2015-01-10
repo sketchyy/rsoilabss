@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="actor-unit">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>com.sketchyy.rsoi3.actors.entities.Actor</class>
+        <class>com.sketchyy.rsoi3.actors.entities.ActorsMovies</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@//localhost:1521/xe"/>
+            <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+            <property name="javax.persistence.jdbc.user" value="sketchyy"/>
+            <property name="javax.persistence.jdbc.password" value="1234"/>
+        </properties>
+    </persistence-unit>
+</persistence>
